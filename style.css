@@ -1,0 +1,173 @@
+@font-face{
+    font-family: Roboto;
+    src: url("Roboto-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Lavanderia Sturdy";
+    src: url("Lavanderia\ Sturdy.otf");
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+
+body{
+    background: #585c68;
+    font-size : 14px;
+    line-height: 22px;
+    color: #555555;
+    font-family: Roboto , sans-serif;
+    font-weight: bold;
+   
+   }
+.titre_principal{
+    font-family: Roboto , sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+
+} 
+.titre{
+    font-family: "Lavanderia Sturdy" ;
+    font-weight: 350;
+    font-size: 25px;
+    color: white;
+    
+}
+.titrebis{
+    font-family: "Lavanderia Sturdy" ;
+    font-weight: 350;
+    font-size: 35px;
+    color: black;
+    display: inline-block;
+    margin-left: 45px;
+    margin-top: -43px;
+    margin-bottom: 20px;
+}
+.titre,.data {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}    
+.perso{
+    font-size: 18px;
+    color:white;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+.iconbis{
+    width: 40px;
+    height: 40px;
+}
+
+.cvbody{
+    width: 800px;
+    height:auto;
+    display:flex;
+    margin: 50px auto;
+}
+.cvbody .partie_gauche{
+    width: 280px;
+    background: #0bb5f4;
+}
+.cvbody .partie_gauche .image_profil{
+    width: 100%;
+    height: 280px;
+}
+.cvbody .partie_gauche .image_profil img{
+    width: 100%;
+    height: 100%;
+}
+.cvbody .partie_gauche .info{
+    padding: 0 25px;
+
+}
+
+.cvbody .partie_gauche .info .element_prive,.element_competences,.element_contact {  /*gerer la marge inferieure basse sur les elements principaux*/
+    margin-bottom : 20px;
+    padding: 10px 0;
+    border-bottom: 2px solid white; 
+}
+.cvbody .partie_gauche .info .element_prive .titre_principal{  /*gerer la marge inferieure sur les titres principaux*/
+    margin-bottom: 20px;
+
+}
+
+
+.cvbody .partie_gauche .element_competences ul li {
+    display: flex;
+    margin-bottom: 10px;
+    color: #b1eaff;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.cvbody .partie_droite{
+    width: 520px;
+    background: white;
+    padding: 35px;
+}
+.cvbody .partie_droite ul{
+    padding-left: 60px;
+    margin-bottom: 35px;
+}
+.cvbody .partie_droite .etude_formation .divers ul li{
+    margin-bottom: 20px;
+}
+.formation_name{
+    font-family: Roboto , sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 15px;
+}
+.temps{
+    margin-top : -42px;
+    margin-left : 250px
+}
+.comp{
+    font-family: Roboto , sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: black;
+    margin-top: 0px;
+}
+.cvbody .partie_droite .titrebis{
+    width: 85%;
+    border-bottom: 1.5px solid rgba(100, 98, 98, 0.5); 
+    padding: 10px 0;
+    
+}
+
+.cvbody .partie_gauche .element_competences ul li .competence_nom {
+    width: 25%;
+  }
+  
+  .cvbody .partie_gauche .element_competences ul li .competence_progress {
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background: #009fd9;
+    position: relative;
+  }
+  
+  .cvbody .partie_gauche .element_competences ul li .competence_per {
+    width: 15%;
+  }
+  
+  .cvbody .partie_gauche .element_competences ul li .competence_progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fff;
+  }
